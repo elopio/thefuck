@@ -1,0 +1,18 @@
+name: thefuck
+version: master
+summary: Magnificent app which corrects your previous console command
+description: |
+  The Fuck tries to match a rule for the previous command, creates a new
+  command using the matched rule and runs it
+
+grade: devel
+confinement: classic
+
+apps:
+  thefuck:
+    command: thefuck
+
+parts:
+  thefuck:
+    source: .
+    plugin: python
